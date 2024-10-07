@@ -1,0 +1,32 @@
+body{
+    background-color: #9ff5b9;
+}
+.middle {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: large;
+    color: #252525;
+    text-align: center;
+}
+.links {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 19px;
+    color: #2d2e2d;
+    text-align: center;
+}
+.img {
+    border-radius: 50%;
+}
+.img_class {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
