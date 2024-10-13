@@ -4,23 +4,20 @@ body{
 .middle {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 40%;
     transform: translate(-50%, -50%);
     padding: 20px;
+    height: 50%;
+    width: 50%;
     font-size: large;
     color: #252525;
     text-align: center;
 }
-.links {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    font-size: 19px;
-    color: #2d2e2d;
-    text-align: center;
+
+.middle h4 {
+    margin: 0%;
 }
+
 .img {
     border-radius: 50%;
 }
