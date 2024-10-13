@@ -1,20 +1,47 @@
 body{
-    background-color: #9ff5b9;
+    background-color: #202222;
+    color: #dbcfcf;
 }
+
+a:link, a:visited, a:hover, a:active {
+    color: #dbcfcf;
+    text-decoration:underline;
+}
+
 .middle {
     position: absolute;
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
-    padding: 20px;
-    height: 50%;
-    width: 50%;
-    font-size: large;
-    color: #252525;
+    height: 25%;
+    width: 40%;
+    text-align: center;
+    background-color: #535855;
+    border-radius: 20px;
+}
+
+.shared_projects {
+    position: fixed;
+    bottom: 2%;
+    width: 47%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: #616864;
+    text-align: left;
+}
+
+.shared_projects h2 {
     text-align: center;
 }
 
-.middle h4 {
+.minecraft {
+    left: 2%;
+}
+.other {
+    right: 2%;
+}
+
+.middle h2 {
     margin: 0%;
 }
 
@@ -26,4 +53,15 @@ body{
     left: 50%;
     top: 15%;
     transform: translate(-50%, -50%);
+}
+.projects {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    background-color: #535855;
+    text-align: center;
+    border-radius: 20px;
+    width: 40%;
+    height: 40%;
 }
