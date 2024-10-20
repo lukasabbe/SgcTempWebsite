@@ -41,6 +41,16 @@
         </ul>
       </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script>
+      const el = document.getElementById('modrinth_downlaods');
+
+      const data = fetch("https://api.modrinth.com/v2/user/QCe37V9V/projects").then((response) => response.json()).then((data) => {
+          let downloads = 0;
+          data.forEach(element => {
+              downloads += element.downloads;
+          });
+          el.innerHTML += "Total downlaods over all projects: <b>" + downloads + "</b>";
+      })
+    </script>
   </body>
 </html>
