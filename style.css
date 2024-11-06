@@ -1,67 +1,60 @@
-body{
+body {
     background-color: #202222;
     color: #dbcfcf;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a:link, a:visited, a:hover, a:active {
     color: #dbcfcf;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .middle {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    height: 25%;
-    width: 40%;
-    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
     background-color: #535855;
     border-radius: 20px;
+    text-align: center;
+    width: 50%; /* Further reduced width */
 }
 
 .shared_projects {
-    position: fixed;
-    bottom: 2%;
-    width: 47%;
-    height: 80%;
-    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: #616864;
+    border-radius: 20px;
     text-align: left;
+    width: 70%; /* Reduced width */
 }
 
 .shared_projects h2 {
     text-align: center;
 }
 
-.minecraft {
-    left: 2%;
-}
-.other {
-    right: 2%;
-}
-
-.middle h2 {
-    margin: 0%;
-}
-
 .img {
     border-radius: 50%;
 }
+
 .img_class {
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    transform: translate(-50%, -50%);
-}
-.projects {
-    position: absolute;
-    left: 50%;
-    top: 75%;
-    transform: translate(-50%, -50%);
-    background-color: #535855;
     text-align: center;
-    border-radius: 20px;
-    width: 40%;
-    height: 40%;
+    margin: 20px 0;
+}
+
+.projects {
+    margin-top: 20px;
+    text-align: center; /* Center the heading */
+}
+
+@media (max-width: 600px) {
+    .middle, .shared_projects {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
 }
